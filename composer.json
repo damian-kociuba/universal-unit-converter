@@ -1,5 +1,5 @@
 {
-    "name": "Polcode/UnitConverter",
+    "name": "Polcode/UnitConverterBundle",
     "description": "Symfony2 bundle to convert units of length, volume, temperature, mass. It's allow to easy add new units.",
     "type": "symfony-bundle",
     "keywords": ["polcode", "symfony", "bundle", "converter", "unit", "universal", "flexible"],
