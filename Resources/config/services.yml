@@ -1,0 +1,18 @@
+parameters:
+    polcode_unit_converter.class: Polcode\UnitConverterBundle\UnitConverterService
+    polcode_unit_provider_basic_units: Polcode\UnitConverterBundle\UnitRepository\Providers\BasicUnitsProvider
+
+services:
+    unit_converter:
+        class: %polcode_unit_converter.class%
+        arguments: [["@basic_units_provider"]]
+        #arguments: [["@basic_units_provider", "@other_units_provider"]]
+        
+    basic_units_provider:
+        class: Polcode\UnitConverterBundle\UnitsRepository\Providers\BasicUnitsProvider
+        public: false
+        
+#    other_units_provider:
+#        class: Polcode\UnitConverterBundle\UnitsRepository\Providers\OtherUnitsProvider
+#        public: false
+        

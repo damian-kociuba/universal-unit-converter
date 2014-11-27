@@ -1,0 +1,317 @@
+#units with the same name can be converted each other
+
+units:
+    metre:
+        symbol: "m"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 1
+        category: 
+            name: "length"
+        synonyms:
+            - "metre"
+            - "metres"
+            - "meter"
+            - "meters"
+    centimetre:
+        symbol: "cm"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 0.01
+        category: 
+            name: "length"
+        synonyms:
+            - "centimetre"
+            - "centimetres"
+            - "centimeter"
+            - "centimeters"
+    kilometre:
+        symbol: "km"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 1000
+        category: 
+            name: "length"
+        synonyms:
+            - "kilometre"
+            - "kilometres"
+            - "kilometer"
+            - "kilometers"
+    milimetre:
+        symbol: "mm"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 0.001
+        category: 
+            name: "length"
+        synonyms:
+            - "milimetre"
+            - "milimetres"
+            - "milimeter"
+            - "milimeters"    
+    decimetre:
+        symbol: "dm"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 0.1
+        category: 
+            name: "length"
+        synonyms:
+            - "decimetre"
+            - "decimetres"
+            - "decimeter"
+            - "decimeters"
+    inch:
+        symbol: "in"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 0.0254
+        category: 
+            name: "length"
+        synonyms:
+            - "inch"
+            - "inches"
+    foot:
+        symbol: "ft"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 0.3048
+        category: 
+            name: "length"
+        synonyms:
+            - "foot"
+            - "feet"
+    yard:
+        symbol: "yd"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 0.9144
+        category: 
+            name: "length"
+        synonyms:
+            - "yard"
+            - "yards"
+    cubicMetre:
+        symbol: "m^3"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 1
+        category: 
+            name: "volume"
+        synonyms:
+            - "m3"
+            - "cubic metre"
+            - "cubic metres"
+            - "cubic meters"
+            - "cubic meters"
+    litre:
+        symbol: "l"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 0.001
+        category: 
+            name: "volume"
+        synonyms:
+            - "litre"
+            - "liter"
+            - "L"
+    cubicDecimetre:
+        symbol: "dm^3"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 0.001
+        category: 
+            name: "volume"
+        synonyms:
+            - "dm3"
+            - "cubic decimetre"
+            - "cubic decimetres"
+            - "cubic decimeter"
+            - "cubic decimeters"
+    cubicCentimetre:
+        symbol: "cm^3"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 0.000001
+        category: 
+            name: "volume"
+        synonyms:
+            - "cm3"
+            - "cubic centimetre"
+            - "cubic centimetres"
+            - "cubic centimeter"
+            - "cubic centimeters"
+    fluidOunce:
+        symbol: "fl oz"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 0,000028413
+        category: 
+            name: "volume"
+        synonyms:
+            - "fluid ounce"
+            - "fluid ounces"
+    ImperialGallon:
+        symbol: "gal"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 0.00454609
+        category: 
+            name: "volume"
+        synonyms:
+            - "imperial gallon"
+            - "imperial gallons"
+    USGalon:
+        symbol: "gal"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 0,003785412
+        category: 
+            name: "volume"
+        synonyms:
+            - "U.S. galon"
+            - "U.S. galons"
+            - "US galon"
+            - "US galons"
+            - "US gal"
+    Kelvin:
+        symbol: "K"
+        conversionMethod:
+            type: "byFormula"
+            formulaToStandardUnitValue: 1
+            formulaFromStandardUnitValue: 1
+        category: 
+            name: "temperature"
+        synonyms:
+            - "kelvin"
+            - "kelvins"
+    Celsius:
+        symbol: "°C"
+        conversionMethod:
+            type: "byFormula"
+            formulaToStandardUnitValue: "x+273.15"
+            formulaFromStandardUnitValue: "x-273.15"
+        category: 
+            name: "temperature"
+        synonyms:
+            - "celsius degree"
+            - "celsius degrees"
+            - "celsius"
+            - "C"
+    Fahrenheit:
+        symbol: "°F"
+        conversionMethod:
+            type: "byFormula"
+            formulaToStandardUnitValue: "(x - 32) * 5/9 + 273.15"
+            formulaFromStandardUnitValue: "(x - 273.15) * 9/5 +32"
+        category: 
+            name: "temperature"
+        synonyms:
+            - "fahrenheit degree"
+            - "fahrenheit degrees"
+            - "fahrenheit"
+            - "F"
+    kilogram:
+        symbol: "kg"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 1
+        category: 
+            name: "mass"
+        synonyms:
+            - "kilogram"
+            - "kilograms"
+    gram:
+        symbol: "g"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 0.001
+        category: 
+            name: "mass"
+        synonyms:
+            - "gram"
+            - "grams"
+    ton:
+        symbol: "t"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 1000
+        category: 
+            name: "mass"
+        synonyms:
+            - "ton"
+            - "tons"
+    ounce:
+        symbol: "oz"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 0.028349523125
+        category: 
+            name: "mass"
+        synonyms:
+            - "ounce"
+            - "ounces"
+            - "℥"
+    pound:
+        symbol: "lb"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 0.45359237
+        category: 
+            name: "mass"
+        synonyms:
+            - "pound"
+            - "pounds"
+            - "lbm"
+            - "℔"
+    bit:
+        symbol: "b"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 1
+        category: 
+            name: "information"
+        synonyms:
+            - "bit"
+            - "bits"
+    byte:
+        symbol: "B"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 8
+        category: 
+            name: "information"
+        synonyms:
+            - "byte"
+            - "bytes"
+    kilobyte:
+        symbol: "kB"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 8192
+        category: 
+            name: "information"
+        synonyms:
+            - "kilobyte"
+            - "kilobytes"
+    megabyte:
+        symbol: "MB"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 8388608
+        category: 
+            name: "information"
+        synonyms:
+            - "megabyte"
+            - "megabytes"
+    gigabyte:
+        symbol: "GB"
+        conversionMethod:
+            type: "byScale"
+            standartUnitScale: 8589934592
+        category: 
+            name: "information"
+        synonyms:
+            - "gigabyte"
+            - "gigabytes"
+    

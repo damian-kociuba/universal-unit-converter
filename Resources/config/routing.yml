@@ -1,0 +1,7 @@
+polcode_unit_converter_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: PolcodeUnitConverterBundle:Default:index }
+    
+polcode_unit_converter_conver:
+    path:   /{sourceValue}/{sourceUnit}/{destinationUnit}
+    defaults: { _controller: PolcodeUnitConverterBundle:Default:convert }
