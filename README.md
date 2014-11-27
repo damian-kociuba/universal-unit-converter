@@ -49,7 +49,7 @@ Adding units
 ------------
 
 There are two ways to define conversion method between
-Basic units are readed from vendor/Polcode/UnitConverterBundle/Resources/config/UnitProvider. 
+Basic units are readed from `vendor/Polcode/UnitConverterBundle/Resources/config/UnitProvider/basicUnitsProviderConfig.yml`. 
 Each unit have symbol, conversion method, category and list of synonyms. When you want to get unit,
 you can use symbol or one of synonims. To convert units, they moust have the same category name.
 
@@ -57,7 +57,7 @@ Conversin method is little more complicated. There are two posibilites to define
 by scale or by formula. Use Scale method when conversion is implemented by multiplication 
 e.g cm <-> m (* 0.01), and formula to other cases.
 
-To add simple units write they definitions in configuration file. 
+To add simple units, write they definitions in configuration file. 
 
         hour:
             symbol: "h"
@@ -81,7 +81,7 @@ To add simple units write they definitions in configuration file.
                 - "second"
                 - "seconds"
 
-Now it is posible to convert between second and hours.
+Now it is posible to convert between seconds and hours.
 
 Adding specific unit provider
 -----------------------------
@@ -89,7 +89,7 @@ Adding specific unit provider
 When you neet conversion between currencies, you should write own units provider, which well be
 update exchange rate e.g every day.
 
-Add your provider class and implement interface from vendor/Polcode/UnitConverterBundle/UnitsRepository/Providers/IUnitsProvider.php.
-Then add reference in vendor/Polcode/UnitConverterBundle/Resources/config/services.yml to your new provider.
+Add your provider class and implement interface from `vendor/Polcode/UnitConverterBundle/UnitsRepository/Providers/IUnitsProvider.php`.
+Then add reference in `vendor/Polcode/UnitConverterBundle/Resources/config/services.yml` to your new provider.
 There is example in this file.
 
