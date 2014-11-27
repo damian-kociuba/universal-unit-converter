@@ -4,6 +4,36 @@ UniversalUnitConverter
 Instalation
 -----------
 
+1. Add to your composer.json:
+        
+        [...]
+        "require" : {
+            [...]
+            "company/demobundle" : "dev-master"
+        },
+        "repositories" : [{
+            "type" : "vcs",
+            "url" : "https://github.com/Company/DemoBundle.git"
+        }],
+        [...]
+
+2. Run:
+        
+        php composer.phar update Polcode/UnitConverterBundle
+
+3. Add to your app/AppKernel.php
+
+        $bundles = array(
+            [...]
+            new Polcode\UnitConverterBundle\PolcodeUnitConverterBundle(),
+        );
+
+4. Add to your app/config/config.yml
+
+        imports:
+            [...]
+            - { resource: "@PolcodeUnitConverterBundle/Resources/config/services.yml" }
+
 Basic usage
 -----------
 
