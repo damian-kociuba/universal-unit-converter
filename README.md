@@ -9,7 +9,7 @@ Instalation
         [...]
         "require" : {
             [...]
-            "company/demobundle" : "dev-master"
+            "polcode/UnitConverterBundle" : "dev-master"
         },
         "repositories" : [{
             "type" : "vcs",
