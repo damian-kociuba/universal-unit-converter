@@ -12,18 +12,18 @@
         }
     ],
     "require": {
-        "php": ">=5.3.1"
+        "php": ">=5.3.1",
+        "symfony/framework-bundle": "~2.3"
     },
     "require-dev": {
         "phpunit/phpunit": "4.1.*"
     },
     "minimum-stability": "dev",
     "autoload": {
-        "psr-0": {
-            "Polcode\\UnitConverterBundle\\": "src"
+        "psr-4": {
+            "Polcode\\Bundle\\UnitConverterBundle\\": ""
         }
     },
-    "target-dir": "Polcode/UnitConverterBundle",
     "repositories": [{
         }],
     "extra": {
