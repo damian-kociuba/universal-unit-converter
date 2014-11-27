@@ -9,11 +9,11 @@ Instalation
         [...]
         "require" : {
             [...]
-            "polcode/UnitConverterBundle" : "dev-master"
+            "Polcode/UnitConverterBundle" : "dev-master"
         },
         "repositories" : [{
             "type" : "vcs",
-            "url" : "https://github.com/Company/DemoBundle.git"
+            "url" : "https://github.com/damian-kociuba/universal-unit-converter.git"
         }],
         [...]
 
